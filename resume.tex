@@ -1,7 +1,7 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage{latexsym}
 \usepackage{marvosym}
-\usepackage[empty]{fullpage}
+\usepackage[empty]{fullpage} % optional, based on preference
 \usepackage{titlesec}
 \usepackage{verbatim}
 \usepackage{enumitem}
@@ -21,53 +21,77 @@
 \addtolength{\textheight}{1.0in}
 
 %----------SECTION FORMATTING----------
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\titlerule \vspace{-5pt}]
-
+\titleformat{\section}[block]{\scshape\raggedright\large}{\thesection}{1em}{\vspace{-2pt}}[\titlerule \vspace{-5pt}]
 %----------RESUME START----------
 \begin{document}
 
 \centerline{\huge \bf Francisco Vu}
-\centerline{Milton, MA \ $|$ \ (617) 898-7325 \ $|$ \ \href{mailto:franvu225@gmail.com}{franvu225@gmail.com} \ $|$ \ \href{https://github.com/franware1}{github.com/franware1}}
+\centerline{Milton, MA \ $|$ \ (617) 898-7325}
+\centerline{\href{mailto:franvu225@gmail.com}{franvu225@gmail.com} \ $|$ \ \href{https://github.com/franware1}{github.com/franware1} \ $|$ \ \href{https://linkedin.com/franvu225}{linkedin.com/franvu225}}
 
 \section*{Education}
+
 \textbf{University of Massachusetts Boston} \hfill Boston, MA \\
-\textit{Bachelor of Science in Computer Science} \hfill \textit{Expected May 20XX} \\
+\textit{Bachelor of Science in Computer Science} \hfill \textit{Expected May 2026} \\
 Relevant Courses: Data Structures, Algorithms, Databases, Machine Learning, Game Development
 
 \section*{Technical Skills}
 \textbf{Languages:} Java, C, Python, C\#, SQL \\
-\textbf{Tools \& Frameworks:} Unity, Git, SQLite \\
+\textbf{Tools \& Frameworks:} Unity, Git, SQLite, Tailwind \\
 \textbf{Concepts:} Data Structures, OOP, Database Management, Machine Learning
 
 \section*{Projects}
-\textbf{Machine Learning Song Classifier} \hfill \textit{Python, SQLite} \\
-\begin{itemize}[leftmargin=0.15in]
-  \item Collected and preprocessed song data using SQLite databases.
-  \item Built and trained a classifier to distinguish between "hit" and "non-hit" songs.
-  \item Explored audio and metadata features to analyze trends in popular music.
+
+\noindent\textbf{Portfolio Website (In Progress)} \hfill \textit{HTML, CSS, JavaScript, Tailwind}
+\vspace{-5pt}
+\begin{itemize}[leftmargin=1.5em, label={-}]
+    \item Developed a fully responsive, modern portfolio website using Tailwind CSS, HTML, CSS, and JavaScript, showcasing strong front-end development skills.
+    \item Focused on building a seamless, intuitive user interface (UI) while improving my understanding of UI/UX principles.
+    \item Gained hands-on experience with version control and Git while managing the project's codebase.
 \end{itemize}
 
-\textbf{3D Unity Game (In Progress)} \hfill \textit{C\#, Unity} \\
-\begin{itemize}[leftmargin=0.15in]
+\noindent\textbf{Machine Learning Song Success Classifier (In Progress)} \hfill \textit{Octave, SQLite} \\
+\vspace{-10pt}
+\begin{itemize}[leftmargin=1.5em, label={-}]
+  \item Collected and preprocessed song data using SQLite databases, ensuring data integrity and efficient querying for analysis.
+  \item Built logistic regression and support vector machine (SVM) models in Octave to predict song success.
+  \item Analyzed audio features and metadata to uncover patterns in popular music, enhancing model performance with feature selection.
+\end{itemize}
+
+\noindent\textbf{3D Unity Game (In Progress)} \hfill \textit{C\#, Unity} \\
+\vspace{-10pt}
+\begin{itemize}[leftmargin=1.5em, label={-}]
   \item Developing a 3D game environment using Unity and scripting with C\#.
-  \item Designed player mechanics, physics interactions, and basic enemy AI.
+  \item Designing player mechanics, physics interactions, basic enemy AI, and game UI.
 \end{itemize}
 
-\textbf{Data Structures Projects} \hfill \textit{Java, C, Python} \\
-\begin{itemize}[leftmargin=0.15in]
-  \item Implemented key data structures (e.g., linked lists, trees, hash maps) in various languages.
+\noindent\textbf{CryptoCoin Bot} \hfill \textit{Python} \\
+\vspace{-10pt}
+\begin{itemize}[leftmargin=1.5em, label={-}]
+  \item Created an automated Telegram messaging robot to notify users about trending and potentially lucrative Crypto investment opportunities.
+  \item Implemented key data structures (e.g., linked lists, trees, hash maps) in Python to analyze Cryptocoin market trends.
   \item Focused on optimizing time and space complexity for performance-critical applications.
 \end{itemize}
 
-\section*{Experience}
-\textbf{(Optional: Add internships, research positions, or TA roles here)} \\
-\textit{Example: Teaching Assistant – Data Structures} \hfill Fall 202X \\
-- Assisted students with debugging Java code and understanding data structure implementation.
+%------- Job History -------%
 
-\section*{Extracurriculars}
-\textbf{CS Club, UMass Boston} \hfill \textit{Member} \\
-- Participated in coding challenges and peer-led workshops on topics like algorithms and version control.
+\section*{Experience (Job History)}
+
+\noindent\textbf{Personal Care Aide (PCA)} \hfill \textit{October 2018 - October 2020} \\
+\textit{Tempus Unlimited} \hfill \textit{Stoughton, MA} \\
+\vspace{-5pt}
+\begin{itemize}[leftmargin=0.15in, label={-}]
+  \item Worked directly with patient and tended to physical, emotional, and medical demands.
+  \item Developed emotional intelligence working with autistic patient and understanding of the developmental disability.
+\end{itemize}
+
+\noindent\textbf{Cashier/Customer Service} \hfill \textit{November 2023 - July 2024} \\
+\textit{Seasons Corner Market} \hfill \textit{Norwood, MA} \\
+\vspace{-10pt}
+\begin{itemize}[leftmargin=0.15in, label={-}]
+  \item Developed interpersonal communication skills during tenure.
+  \item Helped the customers with technical issues regarding the Rewards program and banking issues that might arise during gas payment
+  \item Became familiar with Seasons sales POS.
+\end{itemize}
 
 \end{document}
